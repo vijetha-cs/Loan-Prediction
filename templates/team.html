@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Loanblocks</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a href="http://127.0.0.1:5000/" class=" cursor-pointer mr-5 hover:text-gray-900">Home</a>
+            <a href="http://127.0.0.1:5000/test" class=" cursor-pointer mr-5 hover:text-gray-900">Predict</a>
+            <a href="http://127.0.0.1:5000/aboutus" class="cursor-pointer mr-5 hover:text-gray-900">About Us</a>
+          </nav>
+        </div>
+      </header>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="text-2xl font-medium title-font mb-4 text-gray-900">OUR TEAM</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We are trying our best to provide you with the most convinient user experience on our website </p>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 lg:w-1/4 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="{{url_for('static', filename='debjani.jpeg')}}">
+                <div class="w-full">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Debjani Das</h2>
+                  <h3 class="text-gray-500 mb-3">Team Member</h3>
+                  <p class="mb-4">TE IT (B Tech at Rajiv Gandhi Institute of technology)
+                  </p>
+                  <span class="inline-flex">
+                    <a href="" class="text-gray-500">
+                        <svg
+                        class="w-6 h-6 text-gray-500 fill-current"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
+                        <path
+                          d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                        ></path>
+                      </svg>
+                      
+                    </a>
+                    
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/4 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="{{url_for('static', filename='ritika2.jpeg')}}">
+                <div class="w-full">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Ritika Ghanekar</h2>
+                  <h3 class="text-gray-500 mb-3">Team Member</h3>
+                  <p class="mb-4">TE IT (B Tech at Rajiv Gandhi Institute of technology)</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                        <a href="https://www.linkedin.com/in/ritika-ghanekar-b72a64195" class="text-gray-500">
+                            <svg
+                            class="w-6 h-6 text-gray-500 fill-current"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path
+                              d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                            ></path>
+                          </svg>
+                    </a>
+                    
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/4 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="{{url_for('static', filename='vijetha2.jpeg')}}">
+                <div class="w-full">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Vijetha Kamath</h2>
+                  <h3 class="text-gray-500 mb-3">Team Member</h3>
+                  <p class="mb-4">TE IT (B Tech at Rajiv Gandhi Institute of technology)</p>
+                  <span class="inline-flex">
+                    <a href="" class="text-gray-500">
+                        <svg
+                            class="w-6 h-6 text-gray-500 fill-current"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path
+                              d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                            ></path>
+                          </svg>
+                    </a>
+                    
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/4 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="{{url_for('static', filename='nikita.jpeg')}}">
+                <div class="w-full">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Nikita More</h2>
+                  <h3 class="text-gray-500 mb-3">Team Member</h3>
+                  <p class="mb-4">TE IT (B Tech at Rajiv Gandhi Institute of technology)</p>
+                  <span class="inline-flex">
+                    <a href="" class="text-gray-500">
+                        <svg
+                        class="w-6 h-6 text-gray-500 fill-current"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
+                        <path
+                          d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                        ></path>
+                      </svg>
+                    
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+              <span class="ml-3 text-xl">Loanblocks</span>
+            </a>
+            <p class="mt-2 text-sm text-gray-500">A loan predictor based on your convinience and needs.</p>
+          </div>
+          <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a href="form.html" class="text-gray-600 hover:text-gray-800">Predict</a>
+                </li>
+                <li>
+                  <a href="team.html" class="text-gray-600 hover:text-gray-800">About Us</a>
+                </li>
+              </nav>
+            </div>
+   
+        
+          </div>
+        </div>
+        <div class="bg-gray-100">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">© 2022 Loanblocks
+            </p>
+          </div>
+        </div>
+      </footer>
+    
+</body>
+</html>
